@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CClima_PC/CClima_PC.iml" filepath="$PROJECT_DIR$/CClima_PC/CClima_PC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CClima_PCProject.iml" filepath="$PROJECT_DIR$/CClima_PCProject.iml" />
+    </modules>
+  </component>
+</project>
+
