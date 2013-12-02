@@ -1,11 +1,8 @@
 package reyes.ferreira.cclima;
 
-import android.app.ProgressDialog;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -60,49 +57,20 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(android.R.layout.fragment_main, container, false);
+            View rootView;
+            rootView = inflater.inflate(android.R.layout.fragment_main, container, false);
             return rootView;
         }
     }
 
     public void descargarDatos(View view){
-        //TODO Descargar a informaci�n dende un AsyncTask
+        //TODO Descargar a informacion dende un AsyncTask
         String A="A";
         String B = "B";
         Void C;
         new descargar().execute(A,C,B);
-
     }
-    public class descargar  extends AsyncTask <String,Void,String> {
-        protected String TAG="CClima_PC-descargar";
-        public ProgressDialog dialogo;
-        @Override
-        protected String doInBackground(String... param){
-            Log.i(TAG,"doInBackground iniciado");
-            String resultado;
-            resultado="DFG";
-            return resultado;
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
 
-        @Override
-        protected void onPreExecute(){
-            Log.i(TAG, "onPreExecute iniciado");
-            dialogo = ProgressDialog.show(TAG,"DESCARGANDO","ESPERE...");
-        }
-
-        @Override
-        protected void onPostExecute(String resultado){
-            Log.i(TAG,"onPostExecute iniciado");
-            dialogo=ProgressDialog.show(TAG,"DESCARGADO",resultado);
-            dialogo.dismiss();
-
-        }
-    }
 
 }
 

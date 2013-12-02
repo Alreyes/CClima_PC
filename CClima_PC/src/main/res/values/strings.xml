@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">CClima</string>
+    <string name="action_settings">Action Setings! </string>
     <string name="buscando">Buscando...</string>
     <string name="temperatura_actual">Temperatura: </string>
     <string name="temperatura_maxima">Tª m�xima: </string>
